@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_17b22bf58e41a1a12eef5c5203abe15c000e791f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_350d51a50beae97e50938b2d04c59c12967b63f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_5f458fafc94e554c918ffb9e8dfbd37a1999d4f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_ae24d3c4f0f258623251ad3e892463bebd9ba9c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_4cadf7a62324b547fc3f8215a5d6e8f4bb7db1ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_7954ff845915c231945844d6153d0ed45f34bfe7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_ae77a4109b1c13818881a345d2b0c89c31a9b696.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_bab30303e6a1b930fe93493f39f767aeecc1c5df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_1f56c1de87f80a2d3c6614a9cf1d769e16bfd21f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\XX\AndroidStudioProjects\GeoQuiz\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_7febf9ad13f5ad239c5c105358a494a6a13c5c85.jar" />
+    </item>
+
+</items>
