@@ -8,9 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import  java.util.Arrays;
-
-import java.lang.reflect.Array;
 
 public class QuizActivity extends AppCompatActivity {
     private Button mCheatButton,mTrueButton,mFalseButton,mNextButton,mPrevButton;
@@ -20,7 +17,7 @@ public class QuizActivity extends AppCompatActivity {
     private static int REQ_CODE_CHEAT=0;
 
     private int mCurrentIndex=0;
-    private boolean[] mCheated;
+    private boolean mCheated;
 
     private Question[] mQuestionBank=new Question[]{
             new Question(R.string.question,true),
@@ -39,7 +36,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean answer=mQuestionBank[mCurrentIndex].isAnswerTrue();
 
         int messageResId;
-        if(!mCheated[mCurrentIndex])
+        if(!mCheated)
             if(userPressed==answer)
                 messageResId=R.string.correct_toast;
             else
@@ -56,7 +53,7 @@ public class QuizActivity extends AppCompatActivity {
         if(resultCode!= Activity.RESULT_OK )
             return;
         if(requestCode==REQ_CODE_CHEAT&&data!=null)
-            mCheated[mCurrentIndex]=CheatActivity.wasCheated(data);
+            mCheated=CheatActivity.wasCheated(data);
     }
 
     @Override
@@ -64,7 +61,7 @@ public class QuizActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
 
         outState.putInt(KEY_INDEX,mCurrentIndex);
-        outState.putBooleanArray(KEY_CHEATED,mCheated);
+        outState.putBoolean(KEY_CHEATED,mCheated);
     }
 
     @Override
@@ -75,12 +72,7 @@ public class QuizActivity extends AppCompatActivity {
         if (savedInstanceState!=null)
         {
             mCurrentIndex=savedInstanceState.getInt(KEY_INDEX,0);
-            mCheated=savedInstanceState.getBooleanArray(KEY_CHEATED);
-        }
-        else
-        {
-            mCheated=new boolean[mQuestionBank.length];
-            Arrays.fill(mCheated,false);
+            mCheated=savedInstanceState.getBoolean(KEY_CHEATED,false);
         }
 
         mQuestionTextView=(TextView)findViewById(R.id.question_text_view);
@@ -123,6 +115,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mCurrentIndex=(mCurrentIndex+1)%mQuestionBank.length;
+                mCheated=false;
                 updateQuestion();
             }
         });
@@ -132,6 +125,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mCurrentIndex=(mCurrentIndex-1+mQuestionBank.length)%mQuestionBank.length;
+                mCheated=false;
                 updateQuestion();
             }
         });
