@@ -11,6 +11,8 @@ public class QuizActivity extends AppCompatActivity {
     private Button mTrueButton,mFalseButton,mNextButton,mPrevButton;
     private TextView mQuestionTextView;
 
+    private String mIndexKey="mCurrentIndex";
+
     private int mCurrentIndex=0;
 
     private Question[] mQuestionBank=new Question[]{
@@ -40,9 +42,18 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(mIndexKey,mCurrentIndex);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        if (savedInstanceState!=null)
+            mCurrentIndex=savedInstanceState.getInt(mIndexKey);
 
         mQuestionTextView=(TextView)findViewById(R.id.question_text_view);
         mQuestionTextView.setOnClickListener(new View.OnClickListener() {
